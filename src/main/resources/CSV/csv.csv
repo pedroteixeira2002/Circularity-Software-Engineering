@@ -1,0 +1,61 @@
+Produto;Processo;type;Flow;Categoria;Qtd;Unidade;Custo/Receita
+Garrafa;Processo 1 ;Input;polyethylene terephthalate (PET) granulate;Recurso;247;KG;
+Garrafa;Processo 1 ;Input;polyethylene terephthalate (PET) granulate;" Material recuperado 
+após reciclagem ";103.15;KG;
+Garrafa;Processo 1 ;Input;polyethylene terephthalate (PET) granulate;"Waste produzido 
+na reciclagem";40.11;KG;
+Garrafa;Processo 1;Input;polyethylene terephthalate (PET) granulate;Waste radioactivo;0;KG;
+Garrafa;Processo 1;Input;polyethylene terephthalate (PET) granulate;Materiais reciclados;-143.26;KG;100
+Garrafa;Processo 1;Input;polyethylene terephthalate (PET) granulate;"Energia produtos
+ principais ";0.72;KG;
+Garrafa;Processo 1;Input;polyethylene terephthalate (PET) granulate;"Energia produtos 
+secundário ";0.58;KG;
+Garrafa;Processo 1;Input;polyethylene terephthalate (PET) granulate;Waste na produção de materiais;103.74;KG;
+Garrafa;Processo 1;Input;Low-density polyethylene (LD-PE);Recurso;730;KG;
+Garrafa;Processo 1;Input;Low-density polyethylene (LD-PE);" Material recuperado 
+após reciclagem ";270.98;KG;
+Garrafa;Processo 1;Input;Low-density polyethylene (LD-PE);"Waste produzido 
+na reciclagem";152.4;KG;
+Garrafa;Processo 1;Input;Low-density polyethylene (LD-PE);Waste radioactivo;0;KG;
+Garrafa;Processo 1;Input;Low-density polyethylene (LD-PE);Materiais reciclados;-423.4;KG;100
+Garrafa;Processo 1;Input;Low-density polyethylene (LD-PE);"Energia produtos
+ principais ";0.64;KG;
+Garrafa;Processo 1;Input;Low-density polyethylene (LD-PE);"Energia produtos 
+secundário ";0.58;KG;
+Garrafa;Processo 1;Input;Low-density polyethylene (LD-PE);Waste na produção de materiais;306;KG;
+Garrafa;Processo 1;Input;adhesive PUR;Recurso;23;KG;
+Garrafa;Processo 1;Input;adhesive PUR;" Material recuperado 
+após reciclagem ";0;KG;
+Garrafa;Processo 1;Input;adhesive PUR;"Waste produzido 
+na reciclagem";9.66;KG;
+Garrafa;Processo 1;Input;adhesive PUR;Waste radioactivo;0;KG;
+Garrafa;Processo 1;Input;adhesive PUR;Materiais reciclados;-13.34;KG;100
+Garrafa;Processo 1;Input;adhesive PUR;"Energia produtos
+ principais ";0.28;KG;
+Garrafa;Processo 1;Input;adhesive PUR;"Energia produtos 
+secundário ";0.58;KG;
+Garrafa;Processo 1;Input;adhesive PUR;Waste na produção de materiais;9.66;KG;
+Garrafa;Processo 1;Output;Material virgem (V);Circularidade;247;KG;
+Garrafa;Processo 1;Output;Materiais recuperados EoL (Rr);Circularidade;103.15;KG;
+Garrafa;Processo 1;Output;Waste produzido na reciclagem (Wc);Circularidade;40.11;KG;
+Garrafa;Processo 1;Output;Waste radioactivo (Wr);Circularidade;0;KG;
+Garrafa;Processo 1;Output;Materiais reciclados (R) (+ Burden Free) (-cr);Circularidade;-143.26;KG;
+Garrafa;Processo 1;Output;Energia necessaria para producao das materias/produtos principais;Circularidade;1.28;MJ;
+Garrafa;Processo 1;Output;Energia necessaria para producao das materias/produtos secundario;Circularidade;0.58;MJ;
+Garrafa;Processo 1;Output;Waste na producao de materiais (Wf) - ws;Circularidade;103.74;KG;
+Garrafa;Processo 1;Output;Material virgem (V);Circularidade;730;KG;
+Garrafa;Processo 1;Output;Materiais recuperados EoL (Rr);Circularidade;270.98;KG;
+Garrafa;Processo 1;Output;Waste produzido na reciclagem (Wc);Circularidade;152.4;KG;
+Garrafa;Processo 1;Output;Waste radioactivo (Wr);Circularidade;0;KG;
+Garrafa;Processo 1;Output;Materiais reciclados (R) (+ Burden Free) (-cr);Circularidade;-423.4;KG;
+Garrafa;Processo 1;Output;Energia necessaria para producao das materias/produtos principais;Circularidade;1.36;MJ;
+Garrafa;Processo 1;Output;Energia necessaria para producao das materias/produtos secundario;Circularidade;0.58;MJ;
+Garrafa;Processo 1;Output;Waste na producao de materiais (Wf) - ws;Circularidade;306;KG;
+Garrafa;Processo 1;Output;Material virgem (V);Circularidade;23;KG;
+Garrafa;Processo 1;Output;Materiais recuperados EoL (Rr);Circularidade;0;KG;
+Garrafa;Processo 1;Output;Waste produzido na reciclagem (Wc);Circularidade;9.66;KG;
+Garrafa;Processo 1;Output;Waste radioactivo (Wr);Circularidade;0;KG;
+Garrafa;Processo 1;Output;Materiais reciclados (R) (+ Burden Free) (-cr);Circularidade;-13.34;KG;
+Garrafa;Processo 1;Output;Energia necessaria para producao das materias/produtos principais;Circularidade;1.72;MJ;
+Garrafa;Processo 1;Output;Energia necessaria para producao das materias/produtos secundario;Circularidade;0.58;MJ;
+Garrafa;Processo 1;Output;Waste na producao de materiais (Wf) - ws;Circularidade;9.66;KG;

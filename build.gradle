@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+    id 'jacoco'
+    id 'pmd'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'com.opencsv:opencsv:5.5'
+    implementation 'org.apache.commons:commons-csv:1.8'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging { events "passed", "skipped", "failed", "standardOut", "standardError" }
+    finalizedBy jacocoTestReport // report is always generated after tests run
+}
+
+jacoco {
+    toolVersion = "0.8.8"
+    reportsDirectory = layout.buildDirectory.dir('./reports/jacoco')
+}
+
+
+jacocoTestReport {
+    dependsOn test // tests are required to run before generating the report
+    reports {
+        xml.required = false
+        csv.required =  false
+        html.outputLocation = layout.buildDirectory.dir('./reports/jacoco')
+    }
+}
+
+pmd {
+    consoleOutput = false
+    rulesMinimumPriority = 5
+    ruleSetFiles = files("src/main/resources/PMD/custom-pmd-ruleset.xml")
+
+}

@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  gitlab-runner:
+    image: gitlab/gitlab-runner:latest
+    container_name: gitlab-runner
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - gitlab-runner-config:/etc/gitlab-runner
+    environment:
+      - TZ=Europe/Lisbon # Set the timezone to Portugal
+
+volumes:
+  gitlab-runner-config:

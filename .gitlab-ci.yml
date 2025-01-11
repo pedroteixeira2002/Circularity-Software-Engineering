@@ -1,0 +1,45 @@
+image: gradle:8.4.0-jdk17-alpine
+stages:
+  - build
+  - test 
+variables:  
+  GIT_SSL_NO_VERIFY: "true"
+before_script:
+  - echo "Start Automated Build"
+  - export GRADLE_USER_HOME='pwd'/.gradle
+  - chmod +x ./gradlew 
+cache:
+  paths:
+    - .gradle/wrapper
+    - .gradle/caches
+build:
+    stage: build
+    script:
+        - gradle assemble
+    tags:
+      - docker-runner-G11
+    artifacts:
+        paths:
+        - build/libs/*.jar
+test_black_box:
+    stage: test
+    tags:
+      - docker-runner-G11
+    script:
+        - gradle test
+    artifacts:
+        paths:
+          - build/test-results/test/TEST-*.xml
+    needs: [build]
+test_white_box:
+  stage: test
+  tags:
+    - docker-runner-G11
+  script:
+    - ./gradlew jacocoTestReport
+  artifacts:
+    paths:
+      - build/reports/jacoco*
+  needs: [build]
+after_script:
+  - echo "End Automated Build"
