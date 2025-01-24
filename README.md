@@ -34,8 +34,8 @@ This project is part of a software engineering course that introduces students t
 - **Java**: The primary programming language for the project.
 - **Gradle**: For build automation and dependency management.
 - **JUnit**: For writing and running automated tests.
-- **CI/CD Tools**: Such as GitHub Actions for continuous integration and deployment.
-- **Agile Tools**: Like Jira or Trello for Scrum project management.
+- **CI/CD Tools**: GitLAB Actions for continuous integration and deployment.
+- **Agile Tools**: GitLAB for Scrum project management.
 
 ## Getting Started
 ### Prerequisites
